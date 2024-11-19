@@ -34,12 +34,12 @@ export default function Home() {
       </div>
 
       {taskList.length > 0 && (
-        <div className="m-auto bg-emerald-600 w-96 p-1 items-center rounded-lg justify-between">
+        <div className="m-auto mx-1 sm:m-auto bg-emerald-600 sm:w-96 p-1 items-center rounded-lg justify-between ">
           <ul>
             {taskList.map((task, index) => (
               <li
                 key={index}
-                className="flex items-center justify-between gap-3 m-2 rounded-lg bg-white p-2"
+                className="flex items-center my-2 justify-center gap-3 h-10 sm:m-2 rounded-lg bg-white p-2"
               >
                 <span className="text-left flex-1 text-gray-950">{task}</span>
                 <button
